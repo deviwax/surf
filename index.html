@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/main.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tac+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header header-container">
+        <div class="logo">SURF</div>
+        <button class="burger" id="burger">
+            ☰
+        </button>
+        <nav class="navigation" id="navigation">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="./index.html">Головна</a></li>
+                <li><a class="nav-link" href="#menu">Меню</a></li>
+                <li><a class="nav-link" href="#about">Про нас</a></li>
+            </ul>
+        </nav>
+
+        <!--mobile menu-->
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close">
+                    x
+                </button>
+        
+                <nav class="mobile-menu-nav">
+                    <ul class="menu-nav-list">
+                        <li class="menu-nav-link-list">
+                            <a class="menu-nav-link" href="./index.html">Головна</a>
+                        </li>
+        
+                        <li class="menu-nav-link-list">
+                            <a class="menu-nav-link" href="#menu">Меню</a>
+                        </li>
+        
+                        <li class="menu-nav-link-list">
+                            <a class="menu-nav-link" href="#about">Про нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero section">
+        <div class="container">
+            <h1 class="hero-tittle">Смак, що не потребує слів</h1>
+            <a href="#menu" class="hero-btn">Переглянути меню</a>
+        </div>
+    </section>
+
+    <section class="menu section">
+        <a id="menu">
+            <h2 class="menu-title">Меню</h2>
+        </a>
+        <div class="menu-filters">
+            <button class="filter active" data-filter="all">Усе</button>
+            <button class="filter" data-filter="coffee">Кава</button>
+            <button class="filter" data-filter="matcha">Матча</button>
+            <button class="filter" data-filter="dessert">Десерти</button>
+        </div>
+
+        <div class="menu-item">
+            <!--coffee card-->
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof1.jpg">
+                <h3>Oreo капучино</h3>
+                <span>105 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof2.jpg">
+                <h3>Кокосове макіато</h3>
+                <span>100 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof3.jpg">
+                <h3>Ананасо-кокосове лате</h3>
+                <span>150 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof4.jpg">
+                <h3>Вишневе лате</h3>
+                <span>115 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof5.jpg">
+                <h3>Карамельне лате</h3>
+                <span>100 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof6.jpg">
+                <h3>Лавандове лате</h3>
+                <span>125 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+                <img src="./img/cof7.jpg">
+                <h3>Карамельно-горіхове лате</h3>
+                <span>145 ₴</span>
+            </article>
+
+            <!--matcha card-->
+            <article class="menu-card" data-category="matcha">
+                <img src="./img/matcha1.jpg">
+                <h3>Класична зелена матча</h3>
+                <span>105 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="matcha">
+                <img src="./img/matcha2.jpg">
+                <h3>Зелена матча з полуницею</h3>
+                <span>115 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="matcha">
+                <img src="./img/matcha3.jpg">
+                <h3>Зелена матча з манго</h3>
+                <span>125 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="matcha">
+                <img src="./img/matcha4.jpg">
+                <h3>Класична голуба матча</h3>
+                <span>105 ₴</span>
+            </article>
+            
+            <!--dessert cad-->
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des1.jpg">
+                <h3>Круасан</h3>
+                <span>100 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des2.jpg">
+                <h3>Шоколадний торт</h3>
+                <span>250 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des3.jpg">
+                <h3>Брауні тірамісу</h3>
+                <span>105 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des4.jpg">
+                <h3>Шоколадний чизкейк</h3>
+                <span>215 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des5.jpg">
+                <h3>Лимонний чизкейк</h3>
+                <span>215 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des6.jpg">
+                <h3>Манговий чизкейк</h3>
+                <span>215 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des7.jpg">
+                <h3>Матча торт</h3>
+                <span>225 ₴</span>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+                <img src="./img/des8.jpg">
+                <h3>Червоний вельвет</h3>
+                <span>250 ₴</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="about section">
+        <a id="about">
+            <h2 class="about-title">Про нас</h2>
+        </a>
+        <p class="about-p">Усе почалося з бажання створити місце, куди хочеться повертатися. Де бариста памʼятає ваш улюблений напій, де музика не перебиває розмов,
+        а кожна деталь говорить про турботу. Ми не просто готуємо каву. Ми створюємо атмосферу.</p>
+
+    <div class="about-btn">
+        <button type="button" class="order-btn">Зробити замовлення</button>
+        <button type="button" class="reserve-btn">Забронювати столик</button>
+     </div>   
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">SURF</div>
+
+            <div class="footer-info">
+                <p>Звʼяжіться з нами:
+                    <a href="#">пошта</a> |
+                    <a href="#">тел</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- backdrop -->
+    <div class="backdrop">
+        <div class="modal">
+            <button class="close-modal-btn" type="button">x</button>
+    
+            <p class="modal-p">Залиште нам свої контакти і ми вам зателефонуємо</p>
+    
+            <form class="form">
+                <div class="form-input">
+                    <label for="user-name" class="label-form">Імʼя</label>
+                    <div class="input-icon">
+                        <input type="text" class="input-item" name="user-name" id="user-name" pattern="[a-zA-Za]+"
+                            title="Alex" required />
+                    </div>
+                </div>
+    
+                <div class="form-input">
+                    <label for="phone-number" class="label-form">Телефон</label>
+                    <div class="input-icon">
+                        <input type="tel" class="input-item" name="phone-number" id="phone-number"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required />
+                    </div>
+                </div>
+    
+                <div class="form-input">
+                    <label for="user-email" class="label-form">Пошта</label>
+                    <div class="input-icon">
+                        <input type="email" class="input-item" name="user-email" id="user-email" pattern="[a-zA-Za]+"
+                            required />
+                    </div>
+                </div>
+    
+                <div class="form-input-textarea">
+                    <label for="user-comment" class="label-form">Коментар</label>
+                    <textarea class="form-text" name="user-comment" id="user-comment" placeholder="Залиште коментар"
+                        required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        /* modal */
+        const orderBtn = document.querySelector('.order-btn');
+        const reserveBtn = document.querySelector('.reserve-btn');
+        const backdrop = document.querySelector('.backdrop');
+        const closeBtn = document.querySelector('.close-modal-btn');
+
+        function openModal() {
+            backdrop.classList.add('is-visible');
+        }
+
+        function closeModal() {
+            backdrop.classList.remove('is-visible');
+        }
+
+        orderBtn.addEventListener('click', openModal);
+        reserveBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+
+        backdrop.addEventListener('click', (e) => {
+            if (e.target === backdrop) {
+                closeModal();
+            }
+        });
+
+        /* mobile menu */
+        const burgerBtn = document.getElementById('burger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const closeMenuBtn = document.querySelector('.mobile-menu-close');
+            const menuLinks = document.querySelectorAll('.menu-nav-link');
+
+            function openMenu() {
+                mobileMenu.classList.add('is-open');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.remove('is-open');
+            }
+
+            burgerBtn.addEventListener('click', openMenu);
+            closeMenuBtn.addEventListener('click', closeMenu);
+
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target === mobileMenu) {
+                    closeMenu();
+                }
+            });
+
+        /* filter buttons */
+            const filterButtons = document.querySelectorAll('.filter');
+            const menuCards = document.querySelectorAll('.menu-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+
+                    const filterValue = button.dataset.filter;
+
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    button.classList.add('active');
+
+                    menuCards.forEach(card => {
+                        const category = card.dataset.category;
+
+                        if (filterValue === 'all' || filterValue === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                });
+            });
+    </script>
+</body>
+</html>
